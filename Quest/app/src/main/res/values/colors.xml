@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_grey">#908e8e8e</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="crimson">#8f1f22</color>
+    <color name="gray">#dedede</color>
+    <color name="gray_4d">#4d4d4d</color>
+    <color name="gray_title">#3F3F3B</color>
+    <color name="gray_plus">#878787</color>
+    <color name="gray_plus2">#6D6D6D</color>
+    <color name="gray_plus3">#535353</color>
+    <color name="dark_gray">#282828</color>
+    <color name="black">#000000</color>
+    <color name="white">#fbfbfb</color>
+    <color name="aqua">#19C7AC</color>
+    <color name="light_brown">#AF8E51</color>
+    <color name="light_gray">#ededed</color>
+    <color name="light_text">#bdbdbd</color>
+	<color name="strong_text">#464646</color>
+    <color name="orange">#ffe066</color>
+	<color name="white_transparent">#50fbfbfb</color>
+    <color name="dark_green">#469123</color>
+
+    <!-- Detail Theme -->
+    <!-- Youth -->
+    <color name="theme_lime_light">#CCDD33</color>
+    <color name="theme_lime_dark">#AABB33</color>
+    <!-- Environment -->
+    <color name="theme_green_light">#22DD88</color>
+    <color name="theme_green_dark">#11BB77</color>
+    <!-- Education -->
+    <color name="theme_cyan_light">#22BBDD</color>
+    <color name="theme_cyan_dark">#1199BB</color>
+    <!-- Culture -->
+    <color name="theme_indigo_light">#7788CC</color>
+    <color name="theme_indigo_dark">#6677AA</color>
+    <!-- All -->
+    <color name="theme_orange_light">#FFDD55</color>
+    <color name="theme_gray_light">#666666</color>
+
+
+    <color name="CVBlue">#018ADA</color>
+    <color name="CVOrange">#FF9C00</color>
+    <color name="CVLime">#9CFF00</color>
+    <color name="CVPink">#FF5DAD</color>
+    <color name="CVLightGrey">#EDEDED</color>
+    <color name="CVDarkGrey">#BDBDBD</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="QGray">#e6e6e6</color>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:paddingBottom="@dimen/window_info_margin"
+	android:paddingLeft="@dimen/window_info_margin"
+	android:paddingRight="@dimen/window_info_margin"
+	android:paddingTop="@dimen/window_info_margin" 
+    android:orientation="vertical"
+    android:alpha="1"
+    android:background="@drawable/infobox" >
+
+	    <TextView
+	        android:id="@+id/textViewTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="TextView"
+			android:lineSpacingMultiplier="0.70"
+			android:minLines="1"
+			android:maxLines="1"
+	        android:maxWidth="100dp"
+	        android:textSize="25sp" />
+	    <TextView
+            android:id="@+id/WindowLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:gravity="center"
+            android:focusable="false"
+			android:maxWidth="100dp"
+			android:minLines="3"
+			android:maxLines="3"
+			android:lineSpacingMultiplier="0.75"
+            android:text="Subtitile"
+			android:layout_toRightOf="@+id/textViewTitle"
+            android:textSize="24sp" />
+		<LinearLayout
+			android:layout_marginTop="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:maxWidth="100dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<TextView
+					android:layout_alignParentLeft="false"
+					android:id="@+id/numAttend"
+					android:gravity="center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20sp"
+					android:text="0"
+					/>
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toRightOf="@+id/numAttend"
+					android:src="@drawable/icon_ppcompleted"/>
+			</LinearLayout>
+
+
+			<TextView
+				android:layout_weight="1"
+				android:gravity="center"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:text="Public"/>
+
+			<TextView
+				android:layout_weight="1"
+				android:gravity="right"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:text="Detail>"
+				 />
+
+		</LinearLayout>
+
+	</LinearLayout>
+	<ImageView
+	    android:layout_width="22dp"
+	    android:layout_height="22dp"
+	    android:src="@drawable/triangle"
+	    android:alpha="1"
+	    android:layout_gravity="center"></ImageView>
+</LinearLayout>

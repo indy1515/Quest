@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.indyzalab.quest.QuestLogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/orange">
+            <RelativeLayout
+                android:id="@+id/quest_log_upper_layout"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/avatar_1"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/dark_green"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/current_quest_done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_quest_cat_1"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_toRightOf="@+id/current_quest_done">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Title"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Description"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/quest_log_lower_layout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <!-- List -->
+
+                <!--<android.support.v4.widget.SwipeRefreshLayout-->
+                    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--xmlns:tools="http://schemas.android.com/tools"-->
+                    <!--android:id="@+id/swipe_container"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        tools:context=".NotificationFragment" >
+
+                        <ListView
+                            android:id="@+id/listView_noti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stretchMode="columnWidth"
+                            android:divider="@color/orange"
+                            android:dividerHeight="10dp" >
+                        </ListView>
+
+
+                    </RelativeLayout>
+                <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+
+
+</FrameLayout>

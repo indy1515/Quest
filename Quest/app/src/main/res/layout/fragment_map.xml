@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.indyzalab.quest.MapPageFragment">
+
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+       />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:background="@color/transparent_grey">-->
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:src="@drawable/back_btn"/>-->
+
+    <!--</RelativeLayout>-->
+</FrameLayout>

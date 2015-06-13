@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout  android:id="@+id/container"
+        android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/QGray"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/menu_logs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_logs"/>
+        <ImageView
+            android:id="@+id/menu_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_create"/>
+        <ImageView
+            android:id="@+id/menu_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_map"/>
+        <ImageView
+            android:id="@+id/menu_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_friends"/>
+        <ImageView
+            android:id="@+id/menu_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/btn_profile"/>
+    </LinearLayout>
+</RelativeLayout>
