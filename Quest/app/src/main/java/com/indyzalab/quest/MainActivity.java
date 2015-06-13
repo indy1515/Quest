@@ -1,5 +1,6 @@
 package com.indyzalab.quest;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.SupportMapFragment;
 
@@ -18,11 +22,11 @@ public class MainActivity extends FragmentActivity implements MapPageFragment.On
     public static final int PROFILE_FRAGMENT = 2;
     public static final int CONFIRM_FRAGMENT = 3;
     private final int FRAGMENT_SIZE = PROFILE_FRAGMENT + 1;
-    public static int current_fragment = 0;
+    public static int current_fragment = 1;
     private Fragment[] fragments;
     private static final String FRAGMENT_TAG = "Fragment";
     public static FragmentManager fragmentManager;
-
+    public Activity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,48 @@ public class MainActivity extends FragmentActivity implements MapPageFragment.On
         fragmentManager = getSupportFragmentManager();
         initializingFragment();
         showFragment(QUEST_LOG_FRAGMENT, false);
+        mContext = this;
+
+        //Menu
+        ImageView menu_logs = (ImageView) findViewById(R.id.menu_logs);
+        menu_logs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragment(QUEST_LOG_FRAGMENT,false);
+            }
+        });
+
+        ImageView menu_create = (ImageView) findViewById(R.id.menu_create);
+        menu_create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext,"Coming Soon",Toast.LENGTH_SHORT);
+            }
+        });
+
+        ImageView menu_map = (ImageView) findViewById(R.id.menu_map);
+        menu_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragment(MAP_FRAGMENT, false);
+            }
+        });
+
+        ImageView menu_friends = (ImageView) findViewById(R.id.menu_friends);
+        menu_friends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "Coming Soon", Toast.LENGTH_SHORT);
+            }
+        });
+
+        ImageView menu_profile = (ImageView) findViewById(R.id.menu_profile);
+        menu_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragment(PROFILE_FRAGMENT, false);
+            }
+        });
 
     }
 
@@ -50,6 +96,8 @@ public class MainActivity extends FragmentActivity implements MapPageFragment.On
 
         } transaction.commit();
     }
+
+
 
     public void showFragment(int fragmentIndex, boolean addToBackStack) {
 

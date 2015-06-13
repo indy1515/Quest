@@ -20,7 +20,7 @@
 	        android:layout_height="match_parent"
 	        android:gravity="center"
 	        android:text="TextView"
-			android:lineSpacingMultiplier="0.70"
+			android:lineSpacingMultiplier="0.80"
 			android:minLines="1"
 			android:maxLines="1"
 	        android:maxWidth="100dp"

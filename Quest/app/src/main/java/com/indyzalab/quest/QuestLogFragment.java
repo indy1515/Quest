@@ -83,7 +83,7 @@ public class QuestLogFragment extends Fragment {
         upper_rl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showFragment(MainActivity.MAP_FRAGMENT,false);
+                showFragment(MainActivity.PROFILE_FRAGMENT,false);
             }
         });
 //        swipeContainer = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);

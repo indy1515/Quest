@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/orange"
+    tools:context=".SplashFragment" >
+    <ImageView 
+        android:id="@+id/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       	android:src="@drawable/logo_1"/>
+
+	<com.facebook.widget.LoginButton
+	    android:id="@+id/login_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="20dp"
+	    android:layout_above="@+id/splash_bottom_ll"
+	    android:gravity="center" />
+	<LinearLayout 
+	    android:id="@+id/splash_bottom_ll"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+		android:orientation="vertical"
+	    android:gravity="center"
+	     >
+		<ImageView
+			android:id="@+id/thinclogo"
+			android:layout_width="150dp"
+
+			android:layout_height="wrap_content"
+			android:src="@drawable/angelhacklogo"/>
+		<TextView 
+		    android:id="@+id/splash_engineer_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="20sp"
+		    android:textColor="@color/white"
+		    android:text="@string/angel_hack"/>
+
+	
+	</LinearLayout>
+
+</RelativeLayout>
