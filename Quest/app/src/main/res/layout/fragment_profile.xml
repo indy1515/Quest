@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.indyzalab.quest.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@drawable/bg_2">
+        <LinearLayout
+            android:id="@+id/upper_profile"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.8"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:padding="3dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="Player"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/avatar_1"/>
+            </LinearLayout>
+            <RelativeLayout
+
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:padding="3dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/profile_tquest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="Total Quest:"/>
+                <TextView
+                    android:id="@+id/profile_tquest_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@+id/profile_tquest"
+                    android:text="0"/>
+
+                <TextView
+                    android:layout_below="@+id/profile_tquest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="Total Achievement: 5"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+            <ScrollView
+                android:layout_below="@+id/upper_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/archievementlist"/>
+            </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>
